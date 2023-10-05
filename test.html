@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>國立XX高中</title>
+    <link rel="stylesheet" href="reset.css">
+
+    <style>
+        .header{
+            display: flex;
+            width: 100%;
+            background-color: #000;
+            font-size: 0;
+        }
+        .header a{
+            display: flex;
+            font-size: 0;
+            margin: 0;
+            padding: 0;
+        }
+        .header a img{
+            vertical-align: bottom;
+        }
+        .header nav{
+            text-align: right;
+            width: 100%;
+            font-size: 0;
+        }
+        .header nav a{
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+            line-height: 52px;
+            padding: 0 5px;
+            transition: all 0.3s 0s ease;
+        }
+        .header nav a:hover{
+            font-weight: bold;
+            color: #000;
+            background-color: #fa0;
+        }
+
+        .banner{
+            display: flex;
+        }
+        .banner img{
+            width: 100%;
+            vertical-align: bottom;
+        }
+
+        .news{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .news>h2{
+            font-size: 30px;
+            text-align: center;
+            padding: 5px 0 5px 0;
+            background-color: #fa0;
+        }
+        .news>p{
+            font-size: 16px;
+            text-align: left;
+            padding: 0 5% 25px 5%;
+            margin-bottom: 20px;
+            background-color: #fa0;
+        }
+
+        .wrap{
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            padding: 0 5% 20px;
+            box-sizing: border-box;
+        }
+
+        .wrap .item{
+            width: 25%;
+            position: relative;
+            box-sizing: border-box;
+            padding: 5px;
+        }
+        .wrap .item h3{
+            display: inline-block;
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            font-size: 20px;
+            text-align: left;
+            background-color: rgb(248, 72, 60);
+            color: #000;
+            padding: 0 5px;
+        }
+        .wrap .item img{
+            width: 100%;
+            border: rgb(252, 155, 65) solid 2px;
+            box-sizing: border-box;
+        }
+        .wrap .item p{
+            width: 100%;
+            text-align: left;
+            box-sizing: border-box;
+            padding-bottom: 10px;
+        }
+        .wrap .item a{
+            position: absolute;
+            right: 10px;
+            bottom: 0;
+            background-color: #e6e6e6;
+            color: rgb(254, 106, 106);
+            text-decoration: none;
+            font-size: 12px;
+            text-align: right;
+            padding: 0 5px;
+        }
+
+        .toTop span{
+            background-color: rgba(0, 0, 0, 0.701);
+            color: #fa0;
+            font-weight: bold;
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            text-decoration: none;
+            padding: 10px;
+            cursor: pointer;
+            transition: all 0.5s 0s ease;
+        }
+
+        .toTop span:hover{
+            background-color: rgba(255, 255, 255, 0.701);
+            color: rgb(33, 33, 33);
+            font-weight: bold;
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            text-decoration: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .footer{
+            background-color: #000;
+            color: #aaa;
+            font-size: 12px;
+            line-height: 20px;
+            text-align: center;
+        }
+
+        
+        .side{
+            display: flex;
+            flex-direction: column;
+            width: 5%;
+            background-color: #fa0;
+            color: #fa0;
+            position: fixed;
+            left: -3%;
+            top: 30%;
+            border: #000 dashed 1px;
+            box-sizing: border-box;
+            transition: all .5s .2s ease;
+        }
+        .side:hover{
+            display: flex;
+            flex-direction: column;
+            width: 5%;
+            background-color: #fa0;
+            color: rgb(0, 0, 0);
+            position: fixed;
+            left: 0%;
+            top: 30%;
+            border: #000 dashed 1px;
+            box-sizing: border-box;
+        }
+        .side a{
+            text-decoration: none;
+            color: inherit;
+        }
+        .side a li{
+            list-style: none;
+            text-align: center;
+            font-size: 14px;
+            line-height: 20px;
+            padding: 5px 0;
+            border: #000000 dashed 1px;
+            transition: all .5s 0s ease;
+        }
+        .side a li:hover{
+            background-color: #272727;
+            color: #fa0;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header" id="top">
+        <!-- Logo -->
+        <a href="#"><img src="https://fakeimg.pl/80x50/abc"></a>
+        <!-- Navigaiton Bar -->
+        <nav>
+            <a href="#">首頁</a>
+            <a href="#">本校簡介</a>
+            <a href="#">師資介紹</a>
+            <a href="#">學生專區</a>
+            <a href="#">活動專區</a>
+            <a href="#">聯絡資訊</a>
+        </nav>
+    </div>
+    <!-- Banner -->
+    <div class="banner">
+        <img src="https://fakeimg.pl/960x200/cba">
+    </div>
+    <!-- News -->
+    <div class="news">
+        <h2>最新資訊</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo similique porro, repellendus commodi id ipsum incidunt, itaque culpa accusantium ratione rem sit praesentium, voluptas voluptates corporis blanditiis fugiat! Maiores, inventore.</p>
+    </div>
+    <!-- Info -->
+    <div class="wrap">
+        <div class="item">
+            <h3>2023年運動會</h3>
+            <img src="https://fakeimg.pl/300x200/200">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis autem omnis ab reiciendis nam laudantium assumenda nihil doloremque velit harum.</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="item">
+            <h3>XX科校內競賽</h3>
+            <img src="https://fakeimg.pl/300x200/200">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis autem omnis ab reiciendis nam laudantium assumenda nihil doloremque velit harum.</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="item">
+            <h3>英文歌唱比賽</h3>
+            <img src="https://fakeimg.pl/300x200/200">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis autem omnis ab reiciendis nam laudantium assumenda nihil doloremque velit harum.</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="item">
+            <h3>研討會</h3>
+            <img src="https://fakeimg.pl/300x200/200">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis autem omnis ab reiciendis nam laudantium assumenda nihil doloremque velit harum.</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="item">
+            <h3>棒球隊校際交流</h3>
+            <img src="https://fakeimg.pl/300x200/200">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis autem omnis ab reiciendis nam laudantium assumenda nihil doloremque velit harum.</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="item">
+            <h3>市級朗讀比賽</h3>
+            <img src="https://fakeimg.pl/300x200/200">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis autem omnis ab reiciendis nam laudantium assumenda nihil doloremque velit harum.</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="item">
+            <h3>title</h3>
+            <img src="https://fakeimg.pl/300x200/200">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis autem omnis ab reiciendis nam laudantium assumenda nihil doloremque velit harum.</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="item">
+            <h3>title</h3>
+            <img src="https://fakeimg.pl/300x200/200">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis autem omnis ab reiciendis nam laudantium assumenda nihil doloremque velit harum.</p>
+            <a href="#">Read More</a>
+        </div>
+    </div>
+    <!-- Back to Top -->
+    <div class="toTop" onclick="scrollToTop()">
+        <span>Back to Top</span>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+        &copy; Copyright 國立XX高中
+    </div>
+
+        <!-- Side Bar -->
+        <div class="side">
+            <a href="#"><li>首頁</li></a>
+            <a href="#"><li>學生專區</li></a>
+            <a href="#"><li>活動專區</li></a>
+        </div>
+
+    <script>
+        function scrollToTop(){
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+    </script>
+</body>
+</html>
