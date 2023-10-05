@@ -4,8 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>學校簡介</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        .header{
+            display: flex;
+            width: 100%;
+            background-color: #000;
+            font-size: 0;
+        }
+        .header a{
+            display: flex;
+            font-size: 0;
+            margin: 0;
+            padding: 0;
+        }
+        .header a img{
+            vertical-align: bottom;
+        }
+        .header nav{
+            text-align: right;
+            width: 100%;
+            font-size: 0;
+        }
+        .header nav a{
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+            line-height: 52px;
+            padding: 0 5px;
+            transition: all 0.3s 0s ease;
+        }
+        .header nav a:hover{
+            font-weight: bold;
+            color: #000;
+            background-color: #fa0;
+        }
+    </style>
 </head>
 <body>
-    
+    <!-- Header -->
+    <div class="header" id="top">
+        <!-- Logo -->
+        <a href="#"><img src="https://fakeimg.pl/80x50/abc"></a>
+        <!-- Navigaiton Bar -->
+        <nav>
+            <a href="index.html">首頁</a>
+            <a href="school.html">本校簡介</a>
+            <a href="#">師資介紹</a>
+            <a href="#">學生專區</a>
+            <a href="#">活動專區</a>
+            <a href="#">聯絡資訊</a>
+        </nav>
+    </div>
 </body>
 </html>
