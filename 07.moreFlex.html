@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+        更詳細的介紹flex與實作。
+     -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 1000px;
+            height: 800px;
+            border: 6px solid #f00;
+            display: flex;
+
+            /* 資料流對齊 */
+            /* 尾端對齊 */
+            /* justify-content: flex-end; */
+            /* 置中對齊 */
+            /* justify-content: center; */
+            /* 開頭對齊 */
+            justify-content: flex-start;
+            /* 延展 */
+            /* justify-content: stretch; */
+
+            /* 空白分配在子物件周圍 */
+            /* justify-content: space-around; */
+            /* 空白分配在子物件中間 */
+            /* justify-content: space-between; */
+
+            /* 換行 */
+            /* flex-wrap: wrap; */
+
+            /* 資料流方向 */
+            /* 直排 */
+            /* flex-direction: column; */
+            /* 反向直排 */
+            /* flex-direction: column-reverse; */
+            /* 橫排 */
+            flex-direction: row;
+            /* 反向橫排 */
+            /* flex-direction: row-reverse; */
+
+            /* 交叉軸整體對齊 */
+            /* 對齊開頭 */
+            /* align-content: flex-start; */
+            /* 對齊尾端 */
+            /* align-content: flex-end; */
+            /* 對齊中央 */
+            align-content: center;
+            /* 延展 */
+            /* align-content: stretch; */
+            /* 空白分配在子物件之間 */
+            /* align-content: space-between; */
+            /* 空白分配在子物件周圍 */
+            /* align-content: space-around; */
+
+            /* 針對每一行/列的交叉軸對齊 */
+            /* 對齊尾端 */
+            /* align-items: flex-end; */
+            /* 對齊開頭 */
+            /* align-items: flex-start; */
+            /* 對齊中央 */
+            align-items: center;
+            /* 延展 */
+            /* align-items: stretch; */
+        }
+        .item{
+            width: 500px;
+            
+            /* 控制主軸的基礎長度（橫向代表寬，直向代表高。），設成0時會被內容擠開 */
+            
+            /* flex-basis: 0px; */
+            /* 控制子物件的收縮，0的話就不收縮(會突出去) */
+            flex-shrink: 0;
+            
+            height: 200px;
+            font-size: 16px;
+            /* margin-bottom: 20px; */
+
+        }
+        .item::first-letter{
+            font-size: 40px;
+        }
+        .item1{
+            /* 剩餘空間彈性分配的伸展 */
+            /* flex-grow: 6; */
+            background-color: #fa0;
+
+            flex-shrink: 0;
+        }
+        .item2{
+            /* flex-grow: 3; */
+            
+            /* 設定成自己的交叉軸對齊開頭 */
+            /* align-self: flex-start; */
+            
+            background-color: #0fa;
+            
+            /* 排序到最前面 */
+            /* order: -2; */
+
+            flex-shrink: 1;
+        }
+        .item3{
+            /* flex-grow: 3; */
+            
+            background-color: #a0f;
+            
+            /* order: -1; */
+
+            flex-shrink: 1;
+        }
+        .item4{
+            background-color: #faa;
+            
+            /* item4和item5都是-1，會依照原始碼順序排，4比較前面，所以4會比5靠近開頭。 */
+            order: -1;
+        }
+        .item5{
+            background-color: #afa;
+            order: -1;
+        }
+        .item6{
+            background-color: #aaf;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="item item1">1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta odit voluptatibus reprehenderit ex. Atque, earum est porro, nemo, nam expedita suscipit inventore incidunt ipsam iure pariatur cumque veniam repellendus accusantium!</div>
+        <div class="item item2">2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta odit voluptventore incidunt ipsam iure pariatur cumque veniam repellendus accusantium!</div>
+        <div class="item item3">3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta odit voluptatibus reprehenderit ex. Atque, est porro, nemo, nam expedita suscipit inventore incidunt ipsam iure pariatur cumque veniam repellendus accusantium!</div>
+        <!-- <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div> -->
+    </div>
+</body>
+</html>
