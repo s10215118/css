@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+        實作:
+        利用inline-block的特性，實作menu或navigation bar。
+
+        ※解決list或a之間的空白:
+        空白是在list或a的外側，在menu的內部。
+        因此要移除多餘的空白，要設定menu的font-size:0;並把list或a的font-size去做覆寫。
+        調整list或a的margin或padding是沒用的。
+     -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .menu{
+            background-color: #fa0;
+            text-align: center;
+            font-size: 0;
+        }
+        .menu a{
+            display: inline-block;
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 10px 20px;
+            background-color: rgb(255, 56, 56);
+        }
+        .menu a:hover{
+            background-color: black;
+        }
+     </style>
+</head>
+<body>
+    <div class="menu">
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </div>
+</body>
+</html>

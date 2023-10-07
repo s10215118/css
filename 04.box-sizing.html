@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+        學習目標:
+        學習容器寬度的重計算。
+        1.原本的盒模型計算為:
+        width+border+padding+margin。
+        2.box-sizing的border-box為:
+        width設定成border到border之間的寬度，padding跟border會自動往內推。
+        3.box-sizing的content-box為:
+        width設定成內容物寬度。
+
+     -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 300px;
+            background-color: #fa0;
+            border: 10px solid #f00;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni sit velit molestiae? Quasi, explicabo cum. Rem consequatur culpa, quasi hic tempore eligendi reiciendis distinctio exercitationem cumque corrupti velit recusandae impedit.</div>
+</body>
+</html>

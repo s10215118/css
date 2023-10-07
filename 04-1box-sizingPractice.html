@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+        實作:
+        練習用box-sizing簡化盒模型計算。
+     -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            width: 960px;
+            margin: auto;
+            background-color: #ffa;
+        }
+        .clear-fix{
+            width: 100%;
+            clear: both;
+        }
+        .item{
+            width: 300px;
+            margin: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+            background-color: rgb(255, 255, 255);
+            border: double 3px #aaa;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum odio rerum ab aut magni possimus dolores, voluptatem laudantium? Laboriosam recusandae quas tenetur labore consequuntur ex possimus velit officiis, quam impedit?</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum odio rerum ab aut magni possimus dolores, voluptatem laudantium? Laboriosam recusandae quas tenetur labore consequuntur ex possimus velit officiis, quam impedit?</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum odio rerum ab aut magni possimus dolores, voluptatem laudantium? Laboriosam recusandae quas tenetur labore consequuntur ex possimus velit officiis, quam impedit?</div>
+        <div class="clear-fix"></div>
+    </div>
+</body>
+</html>

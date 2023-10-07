@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+        學習目標:了解inline、block、inline-block物件特性。
+        1.block不論多寬，都會佔掉一整列位置。
+        2.inline會與其他inline特性的物件排在一起。
+        3.float的技巧可以讓block排排站。
+        4.block可以設定寬高，但inline不行，設定也不會有作用（inline像是線一樣，只有內文長度，沒有寬高概念）。
+        5.inline-block遺傳了inline可以跟別人排在一起的特性，但又能夠像block一樣可以設定寬高。
+     -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            display: inline;
+        }
+        h1{
+            display: inline;
+        }
+        p{
+            display: inline;
+        }
+        a{
+            display: inline-block;
+            background-color: #aaa;
+            width: 100px;
+            height: 100px;
+        }
+        ul{
+            display: inline;
+        }
+        li{
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <h1>title</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur <a href="#">123123123</a> adipisicing elit. <strong>abcdefg</strong> debitis rerum esse <em>hello</em>maxime et laborum, accusantium nobis eligendi dolorem iste numquam quas, iusto dolore! Molestiae magni blanditiis fugiat <span>span span span span span</span></p>
+    <ul>
+        <li>list</li>
+        <li>list</li>
+        <li>list</li>
+        <li>list</li>
+    </ul>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error unde itaque voluptatum sunt porro. Quasi odit non expedita nemo veritatis repellat ut, explicabo amet delectus maiores corporis accusamus est voluptatem!</div>
+    dasdasdasdasd
+</body>
+</html>

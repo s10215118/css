@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+        學習目標:了解float基礎特性
+        1.float有left和right的屬性值，但沒有center。
+        2.子物件浮起後，父物件就抓不到子物件的高度了。
+        3.在父物件的最底層加上一個空的子物件，並設定clear:both，即可撐開父物件的高度。
+     -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .wrap{
+            width: 960px;
+            background-color: rgb(255, 226, 171);
+            margin: auto;
+        }
+        .col{
+            margin: 10px;
+            width: 280px;
+            background-color: #ccc;
+            float: left;
+            padding: 10px;
+        }
+        .col img{
+            width: 100%;
+        }
+        .clear-box{
+            clear: both;
+            height: 10px;
+            background-color: #f00;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="col">
+            <img src="https://fakeimg.pl/250x150/eee">
+            <h3>title</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim incidunt dolor illum rem, mollitia ad sapiente voluptatum! Ducimus, omnis, iste repellendus possimus repudiandae adipisci amet, incidunt enim nostrum nam temporibus!</p>
+        </div>
+        <div class="col">
+            <img src="https://fakeimg.pl/250x150/eee">
+            <h3>title</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim incidunt dolor illum rem, mollitia ad sapiente voluptatum! Ducimus, omnis, iste repellendus possimus repudiandae adipisci amet, incidunt enim nostrum nam temporibus!</p>
+        </div>
+        <div class="col">
+            <img src="https://fakeimg.pl/250x150/eee">
+            <h3>title</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim incidunt dolor illum rem, mollitia ad sapiente voluptatum! Ducimus, omnis, iste repellendus possimus repudiandae adipisci amet, incidunt enim nostrum nam temporibus!</p>
+        </div>
+        <div class="clear-box">
+
+        </div>
+    </div>
+</body>
+</html>

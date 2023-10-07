@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+        學習目標:
+        了解flex的概念。
+        1.在父物件中加入display:flex後，內部的子物件都會變成flex-item的特性，有點類似block，但可以橫排而且不會有空白字元問題。
+        2.預設的模式不會折行，且會自動挑整寬度，可使用flex-wrap:wrap換行。
+        3.可對子元素進行margin和padding的控制以進行設計。
+        4.就算子物件的寬度>100%，仍會以父物件最大寬度去自動分配。
+     -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+     <style>
+        .wrap{
+            width: 960px;
+            margin: auto;
+            background-color: #ccc;
+            display: flex;
+            /* flex-wrap: wrap; */
+        }
+        .item{
+            width: 10000px;
+            margin: 0 10px 10px;
+            background-color: #ffa;
+            padding-bottom: 20px;
+        }
+     </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="item">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga autem consequatur at molestiae, ad dolorem quam beatae, praesentium perspiciatis blanditiis et laborum adipisci voluptate architecto provident vero fugiat quasi eveniet.
+        </div>
+        <div class="item">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga autem consequatur at molestiae, ad dolorem quam beatae, praesentium perspiciatis blanditiis et laborum adipisci voluptate architecto provident vero fugiat quasi eveniet.
+        </div>
+        <div class="item">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga autem consequatur at molestiae, ad dolorem quam beatae, praesentium perspiciatis blanditiis et laborum adipisci voluptate architecto provident vero fugiat quasi eveniet.
+        </div>
+        <div class="item">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga autem consequatur at molestiae, ad dolorem quam beatae, praesentium perspiciatis blanditiis et laborum adipisci voluptate architecto provident vero fugiat quasi eveniet.
+        </div>
+        
+        <div class="item">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga autem consequatur at molestiae, ad dolorem quam beatae, praesentium perspiciatis blanditiis et laborum adipisci voluptate architecto provident vero fugiat quasi eveniet.
+        </div>
+    </div>
+</body>
+</html>
